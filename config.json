@@ -1,0 +1,35 @@
+{
+	"global": {
+		"loop time": 3000,
+		"log time": 1,
+		"core": 1,
+		"default upper": "2200",
+		"default lower": "800",
+		"inactive upper": "2200",
+		"inactive lower": "2000",
+		"inactive loop time": 60,
+		"active between": "00:00-23:59",
+		"hysteresis": 3,
+		"rocketing": true,
+		"rocketing threshold": 85
+	},
+	"upf1": {
+		"enabled": true,
+		"cores": "1-9,105-113",
+		"upper": "default",
+		"lower": "default",
+		"mode": "dpdk",
+		"capacity factor": "30",
+		"telemetry path": "/var/run/dpdk/upf1/dpdk_telemetry.v2"
+	},
+	"upf2": {
+                "enabled": true,
+                "cores": "10-18,114-122",
+                "upper": "default",
+                "lower": "default",
+                "mode": "dpdk",
+                "capacity factor": "30",
+                "telemetry path": "/var/run/dpdk/upf2/dpdk_telemetry.v2"
+        }
+
+}
